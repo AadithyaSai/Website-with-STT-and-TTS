@@ -33,7 +33,7 @@ status.onclick = startListening;
 function confirmText(txt) {
   if (txt === "search") {
     if (confirm("go search this?")) {
-      document.getElementById("searcharea").submit();
+      document.searcharea.submit();
     }
   } else if (confirm(`Is this correct: "${txt}"?`)) {
     searchBar.value = txt;
