@@ -18,7 +18,7 @@ searcharea.onsubmit = () => {
   if (searchBar.value) {
     window.location.href = `${
       location.origin + location.pathname
-    }/searchpage?query=${searchBar.value}`;
+    }/searchpage.html?query=${searchBar.value}`;
   }
   return false;
 };
