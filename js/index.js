@@ -4,6 +4,7 @@ var recognition = initSR();
 
 const status = document.getElementById("status");
 const searchBar = document.getElementById("search");
+const searcharea = document.getElementById("searcharea");
 
 const synthesizer = initSS();
 
@@ -33,7 +34,7 @@ status.onclick = startListening;
 function confirmText(txt) {
   if (txt === "search") {
     if (confirm("go search this?")) {
-      document.searcharea.submit();
+      searcharea.submit();
     }
   } else if (confirm(`Is this correct: "${txt}"?`)) {
     searchBar.value = txt;
