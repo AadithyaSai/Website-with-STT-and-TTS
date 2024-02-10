@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+  </head>
+  <body>
+    <h1>Search Page</h1>
+    <form id="searcharea">
+      <input id="search" type="text" />
+      <button id="searchbtn">Search</button>
+    </form>
+
+    <div id="resultarea"></div>
+
+    <script src="js/searchpage.js" type="module"></script>
+  </body>
+
+  <style>
+    #resultarea {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .result {
+      background-color: gray;
+      border: 1px solid black;
+      margin: 10px;
+      min-height: 30vh;
+      width: 25%;
+    }
+
+    .result:hover {
+      border-color: azure;
+    }
+  </style>
+</html>
