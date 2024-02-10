@@ -7,14 +7,16 @@ const searchBar = document.getElementById("search");
 
 const synthesizer = initSS();
 
-synthesizer.speak(
-  new SpeechSynthesisUtterance(document.getElementById("helptext").textContent)
-);
+if (synthesizer)
+  synthesizer.speak(
+    new SpeechSynthesisUtterance(
+      document.getElementById("helptext").textContent
+    )
+  );
 
 searcharea.onsubmit = () => {
   if (searchBar.value) {
-    window.location.href =
-      location.origin + "/searchpage.html?query=" + searchBar.value;
+    location.href = "/searchpage.html?query=" + searchBar.value;
   }
   return false;
 };
