@@ -21,7 +21,9 @@ for (let i = 1; i <= resultCount; i++) {
 }
 
 searcharea.onsubmit = () => {
-  window.location.href = location.pathname + "?query=" + searchBar.value;
+  window.location.href = `${location.origin + location.pathname}?query=${
+    searchBar.value
+  }`;
   return false;
 };
 
