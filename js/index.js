@@ -16,9 +16,9 @@ if (synthesizer)
 
 searcharea.onsubmit = () => {
   if (searchBar.value) {
-    window.location.href = `${location.origin + location.pathname}?query=${
-      searchBar.value
-    }`;
+    window.location.href = `${
+      location.origin + location.pathname
+    }/searchpage?query=${searchBar.value}`;
   }
   return false;
 };
